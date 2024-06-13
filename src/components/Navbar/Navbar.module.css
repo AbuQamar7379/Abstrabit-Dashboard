@@ -1,0 +1,49 @@
+.navbarWrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0px 2px 4px gray;
+}
+
+.navlinks {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* For small screen */
+@media screen and (max-width: 600px) {
+  .navbarWrapper {
+    padding: 15px 10px;
+  }
+  .navlinks {
+    width: 100%;
+    font-size: 12px;
+    padding-left: 30px;
+  }
+}
+
+/* for medium screen */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .navbarWrapper {
+    padding: 15px 5px 15px 10px;
+  }
+  .navlinks {
+    width: 50%;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+}
+
+/* for large screen */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .navlinks {
+    width: 40%;
+  }
+}
