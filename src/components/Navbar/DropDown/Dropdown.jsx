@@ -17,7 +17,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
  *   <Dropdown />
  * )
  */
-export default function Dropdown() {
+export default function Dropdown({text}) {
   const [select, setSelect] = React.useState("");
 
   /**
@@ -30,9 +30,12 @@ export default function Dropdown() {
   };
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 70 }} size="small">
+    <FormControl sx={text ? {m : 1, minWidth : 140} :{ m: 1, minWidth: 70 }} size="small">
       <InputLabel id="demo-select-small-label">
+      {
+        text ? text :
         <PersonIcon color="primary" />
+      }
       </InputLabel>
       <Select
         labelId="demo-select-small-label"
@@ -40,6 +43,7 @@ export default function Dropdown() {
         value={select}
         label="Select Comps"
         onChange={handleChange}
+        disabled = {text}
       >
         <MenuItem style={{ gap: "15px", fontWeight: 600 }} value={"profile"}>
           <PersonIcon color="secondary" /> My Profile

@@ -1,0 +1,21 @@
+.dashboardWrapper{
+    padding: 20px 40px 30px 40px;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.welcome{
+    opacity: 0.8;
+}
+
+.fdWrapper{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.fdPieParent{
+    width: 30%;
+}
