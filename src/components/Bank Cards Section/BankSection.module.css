@@ -1,0 +1,22 @@
+.commonFlex {
+  display: flex;
+  gap: 25px;
+}
+
+.commonFlex2 {
+  display: flex;
+  gap: 28.5px;
+}
+
+.marginTop {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .commonFlex {
+    flex-direction: column;
+  }
+  .commonFlex2 {
+    display: none;
+  }
+}

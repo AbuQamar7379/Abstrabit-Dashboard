@@ -1,6 +1,7 @@
 import PieChartCard from "../Cards/Portfolio/FdPortfolio";
 import styles from "./Dashboard.module.css";
 import FdMaturity from "../Cards/Maturity/FdTimeline";
+import BankSection from "../Bank Cards Section/BankSection";
 
 /**
  * Dashboard component represents the main dashboard view for the user.
@@ -22,6 +23,8 @@ const Dashboard = () => {
           <FdMaturity />
         </div>
       </div>
+
+      <BankSection />
     </div>
   );
 };

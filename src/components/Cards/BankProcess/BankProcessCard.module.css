@@ -1,0 +1,43 @@
+.cardWrapper {
+  width: 30%;
+  border: 2px solid white;
+  background-color: rgb(240, 240, 240, 0.1);
+  box-shadow: 0px 0px 10px gray;
+  padding: 20px 30px;
+}
+.schedule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardParent {
+  display: flex;
+  gap: 20px;
+}
+
+.requestedBy {
+  font-weight: 600;
+}
+
+.opacity {
+  opacity: 0.9;
+  font-size: 14px;
+}
+.boldSize {
+  font-size: 14px;
+  font-weight: 600;
+}
+.marginTop {
+  margin-top: 20px;
+}
+
+.btnSection {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .cardWrapper {
+    width: 100%;
+  }
+}

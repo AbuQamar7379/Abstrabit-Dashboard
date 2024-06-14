@@ -1,0 +1,100 @@
+.cardWrapper {
+  width: 30%;
+  border: 2px solid white;
+  background-color: rgb(240, 240, 240, 0.1);
+  box-shadow: 0px 0px 10px gray;
+  padding: 30px 40px;
+  margin-bottom: 25px;
+}
+
+.footerCard {
+  width: 33%;
+  border: 2px solid white;
+  background-color: rgb(240, 240, 240, 0.1);
+  box-shadow: 0px 0px 10px gray;
+  padding: 20px 30px;
+  margin-bottom: 25px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.chipParent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checked {
+  border-radius: 50% !important;
+  width: 15px !important;
+  height: 15px !important;
+  color: white !important;
+}
+.chip {
+  color: black !important;
+  padding: 5px !important;
+  border-radius: 5px !important;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  text-transform: none !important;
+}
+
+.utkarshFinance {
+  background-color: #520b8d !important;
+}
+.utkarshChip {
+  background-color: #efdfff !important;
+}
+
+.bajajFinance {
+  background-color: #0072bb !important;
+}
+.bajajChip {
+  background-color: #d7e9f8 !important;
+}
+
+.shriramFinance {
+  background-color: #010101 !important;
+}
+.shriramChip {
+  background-color: #dedede !important;
+}
+
+.mahindraFinance {
+  background-color: #ff0000 !important;
+}
+.mahindraChip {
+  background-color: #ffd7d7 !important;
+}
+
+.displayFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commonP {
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 950px) {
+  .cardWrapper {
+    width: 100%;
+  }
+  .chipParent {
+    flex-direction: column;
+  }
+}
