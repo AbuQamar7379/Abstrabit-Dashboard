@@ -1,8 +1,8 @@
 import * as React from "react";
 import { PieChart, pieArcLabelClasses } from "@mui/x-charts/PieChart";
-import './styles.css'
+import "./styles.css";
 import Dropdown from "../../Navbar/DropDown/Dropdown";
-import styles from './FdPortfolio.module.css'
+import styles from "./FdPortfolio.module.css";
 
 const data = [
   {
@@ -50,16 +50,18 @@ const CustomLegend = ({ data }) => {
     <div className={styles.customLegendWrapper}>
       {data.map((item, index) => (
         <div className={styles.customLegendParent} key={index}>
-          <div className={styles.customLegendColor} style={{
-            backgroundColor: item.color,
-          }}></div>
+          <div
+            className={styles.customLegendColor}
+            style={{
+              backgroundColor: item.color,
+            }}
+          ></div>
           <span className={styles.customLabel}>{item.label}</span>
         </div>
       ))}
     </div>
   );
 };
-
 
 /**
  * PieChartCard component renders a pie chart with custom data and styles.
@@ -73,43 +75,43 @@ const CustomLegend = ({ data }) => {
 export default function PieChartCard() {
   return (
     <div className={styles.pieChartWrapper}>
-        <div className={styles.pieHead}>
+      <div className={styles.pieHead}>
         <h4>Your FD Portfolio</h4>
         <Dropdown text="Deposit Amt" />
-        </div>
-    <div className={styles.pieParent}>
-    <PieChart
-      series={[
-        {
-          arcLabel: (item) => `${item.legendLabel} (${item.value}%)`, 
-          arcLabelMinAngle: 45,
-          data: data.map(({ value, label, color, legendLabel }) => ({
-            value,
-            label,
-            color,
-            legendLabel,
-          })),
-          arcProps: (item) => ({
-            fill: item.color,
-          }),
-          innerRadius: 0, 
-          outerRadius: 135, 
-        },
-      ]}
-      sx={{
-        [`& .${pieArcLabelClasses.root}`]: {
-          fill: "white",
-          fontWeight: "600",
-          fontSize: "11px",
-        },
-        '& .MuiLegend-root': {
-          display: 'none',
-        },
-      }}
-      {...size}
-    />
-    <CustomLegend data={data} />
-</div>
-</div>
+      </div>
+      <div className={styles.pieParent}>
+        <PieChart
+          series={[
+            {
+              arcLabel: (item) => `${item.legendLabel} (${item.value}%)`,
+              arcLabelMinAngle: 45,
+              data: data.map(({ value, label, color, legendLabel }) => ({
+                value,
+                label,
+                color,
+                legendLabel,
+              })),
+              arcProps: (item) => ({
+                fill: item.color,
+              }),
+              innerRadius: 0,
+              outerRadius: 135,
+            },
+          ]}
+          sx={{
+            [`& .${pieArcLabelClasses.root}`]: {
+              fill: "white",
+              fontWeight: "600",
+              fontSize: "11px",
+            },
+            "& .MuiLegend-root": {
+              display: "none",
+            },
+          }}
+          {...size}
+        />
+        <CustomLegend data={data} />
+      </div>
+    </div>
   );
 }

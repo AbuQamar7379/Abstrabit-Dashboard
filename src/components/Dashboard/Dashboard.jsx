@@ -1,5 +1,6 @@
-import PieChartCard from '../Cards/Portfolio/FdPortfolio';
-import styles from './Dashboard.module.css';
+import PieChartCard from "../Cards/Portfolio/FdPortfolio";
+import styles from "./Dashboard.module.css";
+import FdMaturity from "../Cards/Maturity/FdTimeline";
 
 /**
  * Dashboard component represents the main dashboard view for the user.
@@ -9,17 +10,20 @@ import styles from './Dashboard.module.css';
  * @returns {JSX.Element} The rendered dashboard component.
  */
 const Dashboard = () => {
-    return (
-        <div className={styles.dashboardWrapper}>
-            <h2 className={styles.welcome}>Welcome, Johan Paul</h2>
+  return (
+    <div className={styles.dashboardWrapper}>
+      <h2 className={styles.welcome}>Welcome, Johan Paul</h2>
 
-            <div className={styles.fdWrapper}>
-                <div className={styles.fdPieParent}>
-                    <PieChartCard />
-                </div>
-            </div>
+      <div className={styles.fdWrapper}>
+        <div className={styles.fdPieParent}>
+          <PieChartCard />
         </div>
-    );
+        <div className={styles.fdMaturityParent}>
+          <FdMaturity />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Dashboard;

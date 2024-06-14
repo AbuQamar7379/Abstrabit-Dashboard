@@ -1,46 +1,46 @@
-.customLegendWrapper{
-    display : "flex";
-    flex-direction : column;
-    align-items: flex-start;
+.customLegendWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.customLegendParent{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.customLegendParent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.customLegendColor{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-right: 10px;
+.customLegendColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-.customLabel{
-    font-size: 14px;
-    font-weight: 600;
-    word-wrap: break-word;
-    opacity: 0.8;
+.customLabel {
+  font-size: 14px;
+  font-weight: 600;
+  word-wrap: break-word;
+  opacity: 0.8;
 }
 
-.pieChartWrapper{
-    background-color: #ffffff;
-    padding: 10px 20px 0 20px;
-    box-shadow: 0px 0px 10px gray;
-    border-radius: 10px;
+.pieChartWrapper {
+  background-color: #ffffff;
+  padding: 10px 20px 20px 20px;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 10px;
 }
 
-.pieHead{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.pieHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.pieHead h4{
-    opacity: 0.9;
+.pieHead h4 {
+  opacity: 0.9;
 }
 
-.pieParent{
-    display: flex;
-    align-items: center;
+.pieParent {
+  display: flex;
+  align-items: center;
 }

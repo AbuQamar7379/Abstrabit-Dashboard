@@ -1,21 +1,60 @@
-.dashboardWrapper{
-    padding: 20px 40px 30px 40px;
-    width: 100vw;
-    height: 100vh;
-    margin-top: 5px;
-    background-color: hsl(0, 0%, 94%);
+.dashboardWrapper {
+  padding: 20px 40px 30px 40px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(240, 240, 240, 0.8);
 }
 
-.welcome{
-    opacity: 0.8;
+.welcome {
+  opacity: 0.8;
 }
 
-.fdWrapper{
-    display: flex;
-    gap: 20px;
-    margin-top: 25px;
+.fdWrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
 }
 
-.fdPieParent{
-    width: 30%;
+.fdPieParent {
+  width: 30%;
+}
+
+.fdMaturityParent {
+  width: 100%;
+}
+
+@media screen and (max-width: 536px) {
+  .fdWrapper {
+    flex-direction: column;
+  }
+  .fdPieParent {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 536px) and (max-width: 656px) {
+  .fdWrapper {
+    flex-direction: column;
+  }
+  .fdPieParent {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 657px) and (max-width: 855px) {
+  .fdWrapper {
+    flex-direction: column;
+  }
+  .fdPieParent {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 856px) and (max-width: 950px) {
+  .fdWrapper {
+    flex-direction: column;
+  }
+  .fdPieParent {
+    width: 40%;
+  }
 }
