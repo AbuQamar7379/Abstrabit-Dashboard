@@ -26,3 +26,12 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media (min-width : 1650px){
+  .timelineChartWrapper{
+    height: 345px;
+  }
+  .timelineParent{
+    height: 98%;
+  }
+}

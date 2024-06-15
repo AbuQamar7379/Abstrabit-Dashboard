@@ -2,7 +2,12 @@
   display: none !important;
 }
 
-
 .MuiChartsLegend-series{
   display: none !important;
+}
+
+@media (min-width : 1650px) {
+  .css-1ympgp2-MuiResponsiveChart-container{
+    height: 260px !important;   
+  }
 }
