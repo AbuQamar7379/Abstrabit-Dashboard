@@ -1,3 +1,8 @@
-.css-1u0lry5-MuiChartsLegend-root {
+.MuiChartsLegend-root, .MuiChartsLegend-column, .css-1u0lry5-MuiChartsLegend-root{
+  display: none !important;
+}
+
+
+.MuiChartsLegend-series{
   display: none !important;
 }
