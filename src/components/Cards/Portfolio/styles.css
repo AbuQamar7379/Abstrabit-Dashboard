@@ -7,7 +7,7 @@
 }
 
 @media (min-width : 1650px) {
-  .css-1ympgp2-MuiResponsiveChart-container{
+  .css-1ympgp2-MuiResponsiveChart-container, .css-1s8wjuj{
     height: 260px !important;   
   }
 }
